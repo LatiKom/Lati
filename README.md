@@ -30,9 +30,9 @@ or report a bug or edit:
 
  - You can write to our social networks.
  - You can write in our github forums or other platforms.
- - You can send us an email.
+ - You can send us an email(```waylyinclude@gmail.com```).
  
- You can also read the wiki and also learn something new about the field of application development and programming, also learn more about the project.
+ You can also read the [wiki](https://github.com/LatiKom/Lati/wiki/Wiki) and also learn something new about the field of application development and programming, also learn more about the project.
 
 ## Bundled Extensions
 This product contains a lot of built-in packages for convenient work, they can also be turned on and off, as well as adding your own languages ​​​​for writing code and writing your own packages using easy `json` file syntax example of this is: `Russian-Language`, `Windows-Keyboard`, `Embedded-Applications`.
