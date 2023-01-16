@@ -43,7 +43,7 @@ This project is very easy to learn, also writing your own functions and packages
  - Download this project to your device, also have downloaded `Python`
    version `3.11` and higher, also have an idea about programming in
    general.
- - Also, download the required file via pip, namely r`equirement.txt` and
+ - Also, download the required file via pip, namely `requirement.txt` and
    paste one command into the command line `pip install -r
    requirements.txt`.
  - To launch applications via the command line, this is one command
