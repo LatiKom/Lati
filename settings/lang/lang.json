@@ -1,0 +1,51 @@
+{
+    "tools": {
+        "line": "Ln",
+        "col": "Col",
+        "lines": "Lns",
+        "wrap": "Wrap",
+        "space": "Spaces",
+        "title": "Name"
+    },
+    "dropdown": {
+        "undo": "Edit Undo",
+        "redo": "Edit Redo",
+        "packages-import": "Import Package",
+        "new": "New File",
+        "open": "Open File",
+        "new-dir": "New Directory",
+        "copy-path": "Copy Path",
+        "delete": [
+            "Delete File",
+            "Delete Directory"
+        ],
+        "edit-drop": "Edit",
+        "opendir": "Open Directory",
+        "save": "Save File",
+        "saveas": "Save As File",
+        "file-drop": "File",
+        "new-saved": "New Saved File",
+        "run": "Run Module",
+        "configurerun": "Configure Run",
+        "shell-drop": "Shell",
+        "virtual": "Virtualenv Create",
+        "preferences": "Preferences",
+        "settings": "Settings Config",
+        "theme": "Theme Config",
+        "hotkeys": "Hotkeys Config",
+        "lang": "Lang Config",
+        "packages": "Packages",
+        "clear": "Clear Terminal",
+        "pep": "Pep-8 Format",
+        "help": "Help",
+        "about": "About Lati"
+    },
+    "popups": {
+        "label-right": "The right part of the text of the information panel is responsible for the text labels and also the version of the application itself, the number of spaces and lines is also shown, and also the current line",
+        "label-left": "The left part of the information line shows the names of the assembly project and also the variable for transferring textat to the next line, also informative"
+    },
+    "widgets": {
+        "filemaneger": "File Maneger",
+        "recentfiles": "Recent Files"
+    }
+}

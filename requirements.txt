@@ -1,0 +1,2 @@
+tkterminal==0.1.0
+autopep8==2.0.1

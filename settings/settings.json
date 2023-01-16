@@ -1,0 +1,92 @@
+{
+    "current-lang": "python",
+    "editor": {
+        "file": {
+            "deafult": "New File",
+            "seporator-ns": "*"
+        },
+        "window": {
+            "geometry": "880x540",
+            "title": "Lati",
+            "version": "23.01.16",
+            "resizable": true,
+            "popups": true,
+            "minimizable": [880, 540]
+        },
+        "recentfile": true,
+        "recentfile-widget": {
+            "side": "left",
+            "fill": "y",
+            "expand": false
+        },
+        "terminal": true,
+        "terminal-widget": {
+            "shell": true,
+            "basename": "lati $",
+            "linebar": false,
+            "side": "bottom",
+            "fill": "x",
+            "expand": false
+        },
+        "linebar": true,
+        "linebar-widget": {
+            "side": "left",
+            "fill": "y",
+            "expand": false
+        },
+        "minimap": false,
+        "minimap-widget": {
+            "side": "left",
+            "fill": "y",
+            "expand": false
+        },
+        "toolbar": true,
+        "toolbar-widget": {
+            "side": "bottom",
+            "fill": "x",
+            "expand": false
+        },
+        "treeview": true,
+        "treeview-widget": {
+            "side": "left",
+            "fill": "y",
+            "expand": false,
+            "indent": 10,
+            "remove-tree-word": ".DS_Store",
+            "spec-folder": [
+                "assets",
+                "venv",
+                "utils",
+                "code",
+                "source",
+                "modules",
+                "packages",
+                "local",
+                "server"
+            ]
+        },
+        "textarea": true,
+        "textarea-widget": {
+            "side": "left",
+            "fill": "both",
+            "expand": true,
+            "wrap": "none",
+            "measureCO": 4,
+            "indent-return": true,
+            "indent-bracket": true,
+            "indent-closebracket": true,
+            "matches": {
+                "{": "}", 
+                "<": ">",
+                "[": "]",
+                "(": ")",
+                "'": "'",
+                "\"": "\""
+            }
+        },
+        "popup": {
+            "waittime": 500,
+            "wraplength": 180
+        }
+    }
+}
