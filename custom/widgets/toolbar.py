@@ -29,8 +29,10 @@ class ToolBar(Frame):
         )
 
     def _updateToolBar(self, editor):
-        (line, char) = editor.index(INSERT).split(".")
-        totalLine = int(editor.index(END).split(".")[0]) - 1
-        self.labelToolRight.configure(text=f'{lang["tools"]["line"]} {line}, {lang["tools"]["col"]} {char} - {totalLine} {lang["tools"]["lines"]}    {lang["tools"]["space"]}: {prefs["editor"]["textarea-widget"]["measureCO"]}    {prefs["editor"]["window"]["version"]}')
-        self.labelToolLeft.configure(text=f'{lang["tools"]["wrap"]} {prefs["editor"]["textarea-widget"]["wrap"]}   {lang["tools"]["title"]} {prefs["editor"]["window"]["title"]}')
-        self.after(100, lambda: self._updateToolBar(editor))
+        try:
+            (line, char) = editor.index(INSERT).split(".")
+            totalLine = int(editor.index(END).split(".")[0]) - 1
+            self.labelToolRight.configure(text=f'{lang["tools"]["line"]} {line}, {lang["tools"]["col"]} {char} - {totalLine} {lang["tools"]["lines"]}    {lang["tools"]["space"]}: {prefs["editor"]["textarea-widget"]["measureCO"]}    {prefs["editor"]["window"]["version"]}')
+            self.labelToolLeft.configure(text=f'{lang["tools"]["wrap"]} {prefs["editor"]["textarea-widget"]["wrap"]}   {lang["tools"]["title"]} {prefs["editor"]["window"]["title"]}')
+            self.after(100, lambda: self._updateToolBar(editor))
+        except: pass

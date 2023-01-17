@@ -12,6 +12,8 @@ from custom.widgets.treeview import *
 from custom.widgets.recentfiles import *
 from custom.widgets.headers import *
 from utils.package import *
+from custom.tools.wikipediaS import *
+from custom.widgets.markdown import *
 
 class App(tk.Tk):
     def __init__(self):
@@ -19,6 +21,9 @@ class App(tk.Tk):
         self.editorTextarea = TextWidget(self, undo=True, autocomplete=self.getmatches)
         if theme['editor']['config']['custom-styles']:
             self.editorTextarea.style()
+            
+        self.md = MarkDownEditorWidget(self)
+        self.md.pack_forget()
             
         self.editorMinimap = MinimapWidget(self.editorTextarea)
         if theme['editor']['config']['custom-styles']:
@@ -70,6 +75,7 @@ class App(tk.Tk):
 
         # * Highlight syntax system
         SyntaxHighlightUtil(self.editorTextarea).highlight()
+        SyntaxHighlightUtil(self.md.editor).highlight()
         
         # * Binds widgets
         self.editorTextarea.bind("<<Change>>", self._OnChanageEditorArea)
@@ -81,9 +87,29 @@ class App(tk.Tk):
         self.drawMenuBar()
         self.pkg = Packages(self.packgaes, self.fu)
         self.pkg.insertMenus()
+        self.sw = SearchWidget()
         
     def _OnChanageEditorArea(self, event):
         self.editorLinenumbers.redraw()
+        
+    def selfopenMarkDown(self):
+        try:
+            self.md.pack_forget()
+        except: pass
+        self.editorTextarea.pack_forget()
+        self.editorLinenumbers.pack_forget()
+        self.md.pack(side=prefs['editor']['textarea-widget']['side'], fill=prefs['editor']['textarea-widget']['fill'], expand=prefs['editor']['textarea-widget']['expand'])
+    
+    def selfopenEditor(self):
+        try:
+            self.editorTextarea.pack_forget()
+            self.editorLinenumbers.pack_forget()
+        except:pass
+        self.editorLinenumbers.pack(side=prefs['editor']['linebar-widget']['side'], fill=prefs['editor']['linebar-widget']['fill'], expand=prefs['editor']['linebar-widget']['expand'])
+        self.editorTextarea.pack(side=prefs['editor']['textarea-widget']['side'], fill=prefs['editor']['textarea-widget']['fill'], expand=prefs['editor']['textarea-widget']['expand'])
+        try:
+            self.md.pack_forget()
+        except: pass
         
     def getmatches(self, word):
         words = js['MATCHES']
@@ -163,6 +189,29 @@ class App(tk.Tk):
             lambda string: self.editorTextarea.edit_redo())
         self.menuApplication.add_cascade(
             label=lang["dropdown"]["edit-drop"], menu=self.editMenu
+        )
+        
+        self.builtMenu = tk.Menu(self.menuApplication, tearoff=0)
+        self.builtMenu.add_command(
+            label=lang["dropdown"]["mark"],
+            command=lambda: self.selfopenMarkDown(),
+            accelerator=keys["key.mark"][0],
+        )
+        self.bind(
+            keys["key.mark"][1],
+            lambda string: self.selfopenMarkDown(),
+        )
+        self.builtMenu.add_command(
+            label=lang["dropdown"]["editor"],
+            command=lambda: self.selfopenEditor(),
+            accelerator=keys["key.editor"][0],
+        )
+        self.bind(
+            keys["key.editor"][1],
+            lambda string: self.selfopenEditor(),
+        )
+        self.menuApplication.add_cascade(
+            label=lang["dropdown"]["built"], menu=self.builtMenu
         )
 
         self.prefMenu = tk.Menu(self.menuApplication, tearoff=0)
@@ -286,6 +335,12 @@ class App(tk.Tk):
             label=lang["dropdown"]["about"],
             command=lambda: self.fu.about()
         )
+        self.helpMenu.add_command(
+            label=lang["dropdown"]["wiki"],
+            command=lambda: self.sw.ask(),
+            accelerator=keys["key.wiki"][0]
+        )
+        self.bind(keys["key.wiki"][1], lambda string: self.sw.ask())
         self.menuApplication.add_cascade(
             label=lang["dropdown"]["help"], menu=self.helpMenu)
 

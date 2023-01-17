@@ -37,6 +37,19 @@
                 "error": "#d90429",
                 "basename": "#f3f5f7",
                 "output": "#f3f5f7"
+            },
+            "markdown": {
+                "h1Color": "#f3f5f7",
+                "h2Color": "#999db0",
+                "h3Color": "#787b88",
+                "codeColor": "#cca36a",
+                "linkColor": "#7fd1bf",
+                "normalSize": 11,
+                "h1Size": 28,
+                "h2Size": 20,
+                "h3Size": 16,
+                "editorfontName": "Monospace",
+                "displayFontName": "Ubuntu"
             }
         },
         "syntax": {

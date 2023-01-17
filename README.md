@@ -3,17 +3,12 @@
 ![License](https://img.shields.io/github/license/LatiKom/Lati)
 ![License](https://img.shields.io/github/languages/code-size/LatiKom/Lati)
 # Lati is Open Source
-## 23.01.16
+## 23.01.17
 In the new version of Lati, a lot of interesting and important things have been added, but unfortunately, built-in applications will not be in this update, but here is a list of all the new visions:
 
- - Built-in command line.
- - Syntax highlighting.
- - Tips in the form of mini highlights, also a file tree, and also a
-   recent file.
- - Running code from an application.
- - Package system.
- - File system improvements.
- - Widget improvements.
+ - MarkDown syntax highlighting.
+ - MarkDown built-in visual editor.
+ - Wikipedia search.
 
 I will try my best to fix any mistakes and help you as much as possible.
 
@@ -30,9 +25,9 @@ or report a bug or edit:
 
  - You can write to our social networks.
  - You can write in our github forums or other platforms.
- - You can send us an email(```waylyinclude@gmail.com```).
+ - You can send us an email.
  
- You can also read the [wiki](https://github.com/LatiKom/Lati/wiki/Wiki) and also learn something new about the field of application development and programming, also learn more about the project.
+ You can also read the wiki and also learn something new about the field of application development and programming, also learn more about the project.
 
 ## Bundled Extensions
 This product contains a lot of built-in packages for convenient work, they can also be turned on and off, as well as adding your own languages ​​​​for writing code and writing your own packages using easy `json` file syntax example of this is: `Russian-Language`, `Windows-Keyboard`, `Embedded-Applications`.

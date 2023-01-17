@@ -19,7 +19,7 @@ class Packages:
                                 with open("./settings/lang/lang.json", "w") as file2:
                                     json.dump(stock["lang"], file2, indent=4)
                             elif "theme" in stock:
-                                with open("./settings/theme/theme.json", "w") as file2:
+                                with open("./settings/themes/theme.json", "w") as file2:
                                     json.dump(stock["theme"], file2, indent=4)
                             elif "run" in stock:
                                 with open("./settings/run.json", "w") as file2:

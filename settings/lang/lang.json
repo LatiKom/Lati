@@ -1,4 +1,5 @@
 {
+    "lang": "en",
     "tools": {
         "line": "Ln",
         "col": "Col",
@@ -38,7 +39,12 @@
         "clear": "Clear Terminal",
         "pep": "Pep-8 Format",
         "help": "Help",
-        "about": "About Lati"
+        "about": "About Lati",
+        "wiki": "Search Wikipedia",
+        "input": "Search in Wikipedia",
+        "built": "Built-In",
+        "mark": "MarkDown Editor",
+        "editor": "Code Editor"
     },
     "popups": {
         "label-right": "The right part of the text of the information panel is responsible for the text labels and also the version of the application itself, the number of spaces and lines is also shown, and also the current line",
