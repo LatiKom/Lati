@@ -8,10 +8,23 @@
         "window": {
             "geometry": "880x540",
             "title": "Lati",
-            "version": "23.01.17",
+            "version": "23.01.18",
             "resizable": true,
             "popups": true,
             "minimizable": [880, 540]
+        },
+        "markdown": {
+            "width": 30,
+            "display": {
+                "expand": true,
+                "fill": "both",
+                "side": "left"
+            },
+            "editor": {
+                "expand": true,
+                "fill": "both",
+                "side": "left"
+            }
         },
         "recentfile": true,
         "recentfile-widget": {

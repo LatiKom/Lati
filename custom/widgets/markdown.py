@@ -35,7 +35,7 @@ class MarkDownEditorWidget(Frame):
                        wrap=prefs['editor']['textarea-widget']['wrap'],
                        insertbackground=theme['editor']['config']['insert']['insert-color']
         )
-        self.editor.pack(expand=1, fill=BOTH, side=LEFT)
+        self.editor.pack(expand=prefs['editor']['markdown']['editor']['expand'], fill=prefs['editor']['markdown']['editor']['fill'], side=prefs['editor']['markdown']['editor']['side'])
         self.editor.bind('<KeyRelease>', self.changes)
 
         self.display = Text(
@@ -53,7 +53,7 @@ class MarkDownEditorWidget(Frame):
                        wrap=prefs['editor']['textarea-widget']['wrap'],
                        font=f"{self.displayFontName} {self.normalSize}",
         )
-        self.display.pack(expand=1, fill=BOTH, side=LEFT)
+        self.display.pack(expand=prefs['editor']['markdown']['display']['expand'], fill=prefs['editor']['markdown']['display']['fill'], side=prefs['editor']['markdown']['display']['side'])
         self.display['state'] = DISABLED
         
         self.editor.tag_config("bold", font=f'{self.displayFontName} {self.normalSize} bold')

@@ -3,12 +3,12 @@
 ![License](https://img.shields.io/github/license/LatiKom/Lati)
 ![License](https://img.shields.io/github/languages/code-size/LatiKom/Lati)
 # Lati is Open Source
-## 23.01.17
+## 23.01.18
 In the new version of Lati, a lot of interesting and important things have been added, but unfortunately, built-in applications will not be in this update, but here is a list of all the new visions:
 
- - MarkDown syntax highlighting.
- - MarkDown built-in visual editor.
- - Wikipedia search.
+ - Application Bar menu is now in a separate file.
+ - Added version check.
+ - Plan drawing test system.
 
 I will try my best to fix any mistakes and help you as much as possible.
 
