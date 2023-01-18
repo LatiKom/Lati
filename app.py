@@ -2,19 +2,19 @@ from tkinter import *
 import tkinter as tk
 from custom.widgets.text import *
 from custom.widgets.linenumbers import *
-from settings import *
-from custom.widgets.terminal import *
-from custom.widgets.minimap import *
-from utils.utils import *
-from custom.widgets.toolbar import *
-from syntax.highlight import *
-from custom.widgets.treeview import *
-from custom.widgets.recentfiles import *
-from custom.widgets.headers import *
-from utils.package import *
-from custom.tools.wikipediaS import *
-from custom.widgets.markdown import *
-from menubar import *
+from settings import theme, prefs
+from custom.widgets.terminal import TerminalWidget
+from custom.widgets.minimap import MinimapWidget
+from utils.utils import FilesUtil
+from custom.widgets.toolbar import ToolBar
+from syntax.highlight import SyntaxHighlightUtil
+from custom.widgets.treeview import TreeManeger
+from custom.widgets.recentfiles import RecentFileWidget
+from custom.widgets.headers import HeaderWidget
+from utils.package import Packages
+from custom.tools.wikipediaS import SearchWidget
+from custom.widgets.markdown import MarkDownEditorWidget
+from menubar import MenuBar
 
 class App(tk.Tk):
     def __init__(self):

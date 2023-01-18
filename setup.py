@@ -1,6 +1,6 @@
-from settings import *
-from app import *
-from utils.client.versioncheck import *
+from settings import prefs
+from app import App
+from utils.client.versioncheck import checkversionyes
 from tkinter import messagebox
 
 def main():

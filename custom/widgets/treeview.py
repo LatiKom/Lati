@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-from settings import *
+from settings import prefs, theme, lang
 import os
 from tkinter import PhotoImage
 
@@ -11,6 +11,7 @@ class TreeManeger(ttk.Treeview):
         self.folderImage = PhotoImage(file="./assets/public/folder.png")
         self.specfolderImage = PhotoImage(file="./assets/public/spec-folder.png")
         self.pyfolderImage = PhotoImage(file="./assets/public/py-folder.png")
+        self.latifolderImage = PhotoImage(file="./assets/public/lati-folder.png")
         self.pythonImage = PhotoImage(file="./assets/public/python.png")
         self.jsonImage = PhotoImage(file="./assets/public/bracket.png")
         self.fileImage = PhotoImage(file="./assets/public/file.png")
@@ -95,6 +96,10 @@ class TreeManeger(ttk.Treeview):
                 elif abspath.split('/')[-1] == '__pycache__':
                     node = self.insert(
                         parent, "end", text=text, open=False, image=self.pyfolderImage
+                    )
+                elif abspath.split('/')[-1] == '.lati':
+                    node = self.insert(
+                        parent, "end", text=text, open=False, image=self.latifolderImage
                     )
                 else:
                     node = self.insert(

@@ -1,7 +1,7 @@
 import idlelib.colorizer as ic
 import idlelib.percolator as ip
 import re, json
-from settings import *
+from settings import prefs, theme
 
 with open(f'./syntax/types/{prefs["current-lang"]}.lang.json', 'r') as f1: js = json.load(f1)
     

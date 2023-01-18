@@ -1,8 +1,8 @@
-from tkinter import *
-from settings import *
+from tkinter import Text
+from settings import prefs, theme
 import re
 import tkinter.font as tkfont
-from syntax.highlight import *
+from syntax.highlight import js
 
 class TextWidget(Text):
     def __init__(self, *args, **kwargs):

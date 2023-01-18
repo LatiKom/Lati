@@ -1,6 +1,6 @@
-from tkinter import *
+from tkinter import Frame, Text, NORMAL, END, DISABLED
 import re
-from settings import *
+from settings import prefs, theme
 
 class MarkDownEditorWidget(Frame):
     def __init__(self, *args, **kwargs):

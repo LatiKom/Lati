@@ -1,5 +1,5 @@
-from tkinter import *
-from settings import *
+from tkinter import Menu, DISABLED
+from settings import lang, keys
 import tkinter as tk
 import os
 
