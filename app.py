@@ -1,7 +1,7 @@
 from tkinter import *
 import tkinter as tk
-from custom.widgets.text import *
-from custom.widgets.linenumbers import *
+from custom.widgets.text import TextWidget
+from custom.widgets.linenumbers import TextLineNumbersWidget
 from settings import theme, prefs
 from custom.widgets.terminal import TerminalWidget
 from custom.widgets.minimap import MinimapWidget
